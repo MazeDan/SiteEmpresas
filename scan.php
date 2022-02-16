@@ -27,7 +27,7 @@ function onScanError(errorMessage) {
   //handle scan error
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
-    "reader", { fps: 10, qrbox: 250 });
+    "reader", { fps: 10, qrbox: 280 });
 html5QrcodeScanner.render(onScanSuccess, onScanError);
 </script>
 <?php 
