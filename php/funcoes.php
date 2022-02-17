@@ -3,7 +3,7 @@
 
 function conecta(){
     $dbHost = "localhost";
-    $dbName = "danieol";
+    $dbName = "daniel";
     $dbUsername = "root";
         
     $conexao = new mysqli($dbHost,$dbUsername,"",$dbName)or 
@@ -13,8 +13,7 @@ function conecta(){
 
 function salvar($conexao,$nome,$nome_do_pai,$nome_da_mae,$data_de_nascimento,$status){
     $sql ="insert into alunos(nome,nome_pai,nome_mae,data_nascimento,status)
-            values('$nome','$nome_do_pai',$nome_da_mae,$data_de_nascimento,$status)";
-    echo $sql;die();
+            values('$nome','$nome_do_pai','$nome_da_mae','$data_de_nascimento','$status')";
     $select = mysqli_query($conexao,$sql);
     return $select;
 }
