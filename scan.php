@@ -5,6 +5,7 @@
 
 <script src="js/html5-qrcode.min.js"></script>
 
+<br>
 <div class="container">
   <div class="row">
     <div class="col">
@@ -12,7 +13,7 @@
     </div>
 
     <div class="col">
-      <h4>SCAN RESULT</h4>
+      <h4>Resultado QrCode</h4>
       <div id="result">Result Here</div>
     </div>
 
