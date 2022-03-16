@@ -12,10 +12,6 @@
       <div id="reader"></div>
     </div>
 
-    <div class="col">
-      <h4>Resultado QrCode</h4>
-      <div id="result">Result Here</div>
-    </div>
 
   </div>
 </div>

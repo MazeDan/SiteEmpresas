@@ -26,6 +26,7 @@
         <td>Data de Nascimento</td>
         <td>Status</td>
         <td>CodigoQr</td>
+        <td>Ações</td>
 
 
 
@@ -39,8 +40,16 @@
         echo "<td>".$dado['nome_pai']."</td>";
         echo "<td>".$dado['nome_mae']."</td>";
         echo "<td>".$dado['data_nascimento']."</td>";
-        echo "<td>".$dado['status']."</td>";
+        if($dado['status']==0){
+            $status = "liberado";
+        }else{$status = "Na escola";}
+        
+        echo "<td>".$status."</td>";
         echo "<td>".$dado['codigo_qr']."</td>";
+        echo "<td>
+        <a href='Entrada.php?id=".$dado['id']."'class='link-light btn btn-success btn-group-sm'>Entrada</a>
+        <a href='Saida.php?id=".$dado['id']."'class='delete link-light btn btn-danger btn-group-sm' onclick='ConfirmDelete()'>Saida</a>
+    </td>";
         echo "</tr>";
     }
 
