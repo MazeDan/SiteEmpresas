@@ -5,13 +5,7 @@
     if($_GET){
         $codigo_qr = $_GET['qrcode'];
     }
-    $dbHost = "localhost";
-    $dbName = "daniel";
-    $dbUsername = "root";
-        
-    $conexao = new mysqli($dbHost,$dbUsername,"",$dbName);
-    $sql = "select * from teste";
-    $comando = mysqli_query($conexao,$sql);
+    $conexao = conecta();
     
     $dados = pesquisa($conexao,7,$codigo_qr,'alunos');
 
@@ -27,9 +21,6 @@
         <td>Status</td>
         <td>CodigoQr</td>
         <td>Ações</td>
-
-
-
     </tr>
     </tread>
 <?php

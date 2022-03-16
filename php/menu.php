@@ -10,8 +10,8 @@
             </ul>
 
             <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">Login</button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
+            <a href="#" class="btn btn-outline-light me-2"><i class="bi bi-person-fill"></i> Login</a>
+            <a href="../arquivos/cadastro.php" class="btn btn-warning"><i class="bi bi-person-fill"></i> Cadastrar</a>
             </div>
         </div>
 </header>

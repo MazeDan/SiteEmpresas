@@ -1,4 +1,5 @@
 
+
   <div class="modal-dialog text-dark" role="document">
     <div class="modal-content rounded-5 shadow">
       <div class="modal-header p-2 pb-4 border-bottom-0">
@@ -11,7 +12,7 @@
     <h2 class="display-6">Olá, seja bem vindo</h2>
     <hr>
     </center>
-    <form action="cadastro.php" method="post">
+    <form action="cadastrar.php" method="post">
                   <div class="form-floating mb-3">
             <input type="text" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com" name="nome" value="">
             <label for="floatingInput">Nome</label>
@@ -38,15 +39,4 @@
       </div>
     </div>
   </div>
-</div>
-
-
-<script>
-    $('#senha, #confirmar_senha').on('keyup', function () {
-    if ($('#senha').val() == $('#confirmar_senha').val()) {
-        var senha = true;
-        $('#message').html('Senhas Iguais').css('color', 'green');
-    } else 
-        $('#message').html('Senhas Diferentes').css('color', 'red');
-});
-</script>
+</div
